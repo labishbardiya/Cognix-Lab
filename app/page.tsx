@@ -30,7 +30,7 @@ export default function Home() {
     }
 
     function animate() {
-      if (!ctx) return
+      if (!ctx || !canvas) return
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 
       nodes.forEach((node, i) => {
